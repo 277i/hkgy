@@ -27,7 +27,6 @@
 //   {xz:"8-12", type: '专业技术类', zn: '质量管理/测试工程师(QA/QC工程师)', jobname: '质量工程师', addr: '上海', zhuanye: '交通/运输/物流类', zz: '学历要求:本科及以上<br>所需专业:工业工程、机械工程、电气工程、自动化、适航管理等相关专业<br>岗位职责:<br>1、负责所承担产品的质量策划工作，编制质量计划 ，并组织监督实施；<br>2、参与项目各类评审及审查工作，监督、检查问题的落实，确保产品质量过程受控；<br>3、负责所有内/外部问题报告的管理，组织、协调所有问题的确认、临时处理、分析纠正预防等工作；<br>4、负责组织质量目标的统计 、分析及改善工作。<br>任职要求:<br>1、具有工业工程、机械或电子电器专业专业知识；<br>2、认真负责、积极主动、沟通能力强、团队意识强；<br>3、有较强的独立解决问题能力、沟通、语言表达能力强；<br>4、具有与技术相关的英语读写能力。；', link: 'https://xym.51job.com/personal/personal_applyjob.aspx?ctmid=6393432&jobid=150585277', xl: '本科'}
 // ]
 
-
 // var jobs = [
 //   {xz:"8-12", type: '工艺类', jobname: 'IE工程师', zn: '工业工程师', addr: '上海', xl: '本科', zz: '<br>岗位职责：<br>1、负责产能产线规划、生产现场优化、制造成本改善、工厂布局设计等方面相关工作。包含但不限于以下方面：<br>2、 负责精益生产、IE改善技术的研究；<br>3、 运用精益手法分析、发现问题，组织对当前制造相关流程、工艺方法、制造成本等提出改善建设方案；<br>4、根据产能情况组织开展例行性短中长期规划、组织设计解决方案并推动实施；<br>5、 根据组织架构与规划发展需要，开展制造工厂布局设计与优化。<br>任职要求：<br>1、了解电子行业相关制造标准，了解生产制造流程；<br>2、具备较强的统筹规划能力和系统协调能力；<br>3 、具有良好的语言文字表达能力与结构化思维，具有团队合作精神。<br>', xl1: '本科及以上', zy: '工业工程、数学、信息管理、电力电子等相关专业', link: 'https://xyz.51job.com/external/apply.aspx?jobid=150585250&ctmid=6393432'},
 //   {xz:"8-12", type: '工艺类', jobname: '测试工程师', zn: '测试工程师', addr: '上海', xl: '本科', zz: '<br>岗位职责：<br>1、处理电子产品故障原因分析定位；<br>2、进行新研电子产品调试测试；<br>3、编制电子产品故障排查定位方法以及知识积累；<br>4、编制电子产品专用测试设备技术需求书以及固定资产报告；<br>5、调研行业内在测试领域新技术，提升配电产品在测试方面工作效率；<br>6、研究设计产品测试工装优化测试方法。<br>任职要求：<br>1、具有扎实的数字、模拟电路专业理论基础，熟悉单片机、DSP等处理器的原理及外围电路电路设计；<br>2、熟练使用常见万用表、示波器、电子负载仪表设备；<br>3、具有硬件电路电路分析和设计能力、调试和问题解决能力者优先；<br>4、熟悉C++、C#、Java、Python等编程语言者优先。', xl1: '本科及以上', zy: '自动化、电气工程、电子信息工程等相关专业', link: 'https://xyz.51job.com/external/apply.aspx?jobid=150585251&ctmid=6393432'},
@@ -57,11 +56,9 @@
 //   {xz:"8-12", type: '专业技术类', jobname: '质量工程师', zn: '质量管理/测试工程师(QA/QC工程师)', addr: '上海', xl: '本科', zz: '<br>岗位职责：<br>1、负责所承担产品的质量策划工作，编制质量计划 ，并组织监督实施；<br>2、参与项目各类评审及审查工作，监督、检查问题的落实，确保产品质量过程受控；<br>3、负责所有内/外部问题报告的管理，组织、协调所有问题的确认、临时处理、分析纠正预防等工作；<br>4、负责组织质量目标的统计 、分析及改善工作。<br>任职要求：<br>1、具有工业工程、机械或电子电器专业专业知识；<br>2、认真负责、积极主动、沟通能力强、团队意识强；<br>3、有较强的独立解决问题能力、沟通、语言表达能力强；<br>4、具有与技术相关的英语读写能力。', xl1: '本科及以上', zy: '工业工程、机械工程、电气工程、自动化、适航管理等相关专业', link: 'https://xyz.51job.com/external/apply.aspx?jobid=150585277&ctmid=6393432'}
 // ]
 
-
-
 var params = {
   ctmid: "6393432", //会员号
-  coid:"",
+  coid: "",
   divid: "", //部门
   jobarea: "", //工作地点
   functype: "", //职能
@@ -83,38 +80,43 @@ var params = {
   // jobid:141394839,
   // jkeyword: ""
 };
-getJobCondition()
-function getJobCondition(){
-  coapi.getJobCondition(params.ctmid, function (data) {
-    //取到数据之后的操作
-    console.log(data, "搜索器列表");
-    var functype = data.resultbody.functype;
-    var degreefrom = data.resultbody.degreefrom;
-    let template = '<option value="">-职能类别-</option>'
-    for (let i = 0; i < functype.length; i++) {
-      template += `<option value="${functype[i].key}">${functype[i].value}</option>`
-    }
-    $('#lb').html(template)
+getJobCondition();
+function getJobCondition() {
+  coapi.getJobCondition(
+    params.ctmid,
+    function (data) {
+      //取到数据之后的操作
+      console.log(data, "搜索器列表");
+      var functype = data.resultbody.functype;
+      var degreefrom = data.resultbody.degreefrom;
+      let template = '<option value="">-职能类别-</option>';
+      for (let i = 0; i < functype.length; i++) {
+        template += `<option value="${functype[i].key}">${functype[i].value}</option>`;
+      }
+      $("#lb").html(template);
 
-    let template1 = '<option value="">-学历要求-</option>'
-    for (let i = 0; i < degreefrom.length; i++) {
-        template1 += `<option value="${degreefrom[i].key}">${degreefrom[i].value}</option>`
-    }
-    $('#xl').html(template1)
-
-  }, params);
+      let template1 = '<option value="">-学历要求-</option>';
+      for (let i = 0; i < degreefrom.length; i++) {
+        template1 += `<option value="${degreefrom[i].key}">${degreefrom[i].value}</option>`;
+      }
+      $("#xl").html(template1);
+    },
+    params
+  );
 }
-joblist()
-function joblist(){
-  coapi.getJobList(params, function (data) {
-    //取到数据之后的操作
-    console.log(data, "职位列表---原")
-    var joblist = data.resultbody.joblist
-    var template2 = ''
-    console.log(joblist !== undefined,"111");
+joblist();
+function joblist() {
+  coapi.getJobList(
+    params,
+    function (data) {
+      //取到数据之后的操作
+      console.log(data, "职位列表---原");
+      var joblist = data.resultbody.joblist;
+      var template2 = "";
+      console.log(joblist !== undefined, "111");
 
-    if (joblist !== undefined ) {
-      for (let i = 0; i < joblist.length; i++) {
+      if (joblist !== undefined) {
+        for (let i = 0; i < joblist.length; i++) {
           template2 += `
               <div class="list">
                   <div class="list-item" lock='0' data-jobid="${joblist[i].jobid}">
@@ -126,84 +128,94 @@ function joblist(){
 
                   </div>
               </div>
-          `
+          `;
+        }
+      } else {
+        template2 = `<p class='tip'>暂无数据</p>`;
       }
-  } else {
-
-      template2 = `<p class='tip'>暂无数据</p>`
-  }
-  $('.listbox').html(template2)
-  }, params);
+      $(".listbox").html(template2);
+    },
+    params
+  );
 }
-$(document).on("click",".list-item",function(){
-  let lock = $(this).attr('lock')
-  var id = $(this).attr("data-jobid")
-  var _than =  $(this)
-  if (lock == '0') {
+$(document).on("click", ".list-item", function () {
+  let lock = $(this).attr("lock");
+  var id = $(this).attr("data-jobid");
+  var _than = $(this);
+  if (lock == "0") {
     coapi.getJobDetail(id, function (data) {
       //取到数据之后的操作
-      console.log(data, "职位详情")
+      console.log(data, "职位详情");
       // var html = data.resultbody.jobinfo
-        html = `
+      html = `
 
         
-        <p class="txt">${data.resultbody.jobinfo.replace(/(^\d、)|(工作地点：\W+)/gm, '$1').replace(/(岗位职责：|岗位要求：|任职要求：|学历要求：|所需专业：)/gm, "<span>$1</span>")}</p>
+        <p class="txt">${data.resultbody.jobinfo
+          .replace(/(^\d、)|(工作地点：\W+)/gm, "$1")
+          .replace(
+            /(岗位职责：|岗位要求：|任职要求：|学历要求：|所需专业：)/gm,
+            "<span>$1</span>"
+          )}</p>
         
         <p class="t">工作地点：</p>
         <p class="txt">${data.resultbody.jobareaname}</p>
-        <a class="btn" href="http://xyz.51job.com/external/apply.aspx?jobid=${data.resultbody.jobid}&ctmid=${data.resultbody.ctmid}"><img src="./images/page2/btn.png" alt=""></a>
-        `
-        _than.siblings('.list-detail').html(html)
+        <a class="btn" href="http://xyz.51job.com/external/apply.aspx?jobid=${
+          data.resultbody.jobid
+        }&ctmid=${
+        data.resultbody.ctmid
+      }"><img src="./images/page2/btn.png" alt=""></a>
+        `;
+      _than.siblings(".list-detail").html(html);
     });
 
-      $('.list-detail').slideUp()
-      $('.xia').removeClass('rota')
-      $(this).find('.xia').addClass('rota')
-      $('.list-item').attr('lock', '0')
-      $(this).attr('lock', '1')
-      $(this).siblings('.list-detail').slideDown()
+    $(".list-detail").slideUp();
+    $(".xia").removeClass("rota");
+    $(this).find(".xia").addClass("rota");
+    $(".list-item").attr("lock", "0");
+    $(this).attr("lock", "1");
+    $(this).siblings(".list-detail").slideDown();
   } else {
-      $(this).siblings('.list-detail').slideUp()
-      $(this).attr('lock', '0')
-      $(this).find('.xia').removeClass('rota')
+    $(this).siblings(".list-detail").slideUp();
+    $(this).attr("lock", "0");
+    $(this).find(".xia").removeClass("rota");
   }
-})
+});
 
-
-$('.navbox .nav').on('click', function () {
-  let index = $(this).index()
-  $('.box').hide()
-  $(`.box${index + 1}`).show()
+const video1 = document.getElementById("video1");
+const video2 = document.getElementById("video2");
+$(".navbox .nav").on("click", function () {
+  let index = $(this).index();
+  $(".box").hide();
+  $(`.box${index + 1}`).show();
+  video1.pause();
+  video2.pause();
   if (index == 1) {
-      // renderlist(jobs)
+    // renderlist(jobs)
   }
-})
+});
 
-$('.box2 .navBox .nav').on('click', function () {
-  $(this).addClass('on').siblings().removeClass('on')
-  var poscode = $(this).attr("data-id")
-  params.poscode =poscode;
-  joblist()
+$(".box2 .navBox .nav").on("click", function () {
+  $(this).addClass("on").siblings().removeClass("on");
+  var poscode = $(this).attr("data-id");
+  params.poscode = poscode;
+  joblist();
 
   // renderlist(jobs)
-})
+});
 
-$('.searchbtn').on('click', function () {
-  params.functype = $('#lb').val()
-  params.degreefrom = $("#xl").val()
-  joblist()
+$(".searchbtn").on("click", function () {
+  params.functype = $("#lb").val();
+  params.degreefrom = $("#xl").val();
+  joblist();
   // renderlist(jobs)
-})
+});
 
-$('#keyword').change(function(){
-  params.keyword=$('#keyword').val()
-  console.log("keyword")
-  joblist()
-})
-$('.searchicon').click(function(){
-  params.keyword=$('#keyword').val()
-  joblist()
-})
-
-
-
+$("#keyword").change(function () {
+  params.keyword = $("#keyword").val();
+  console.log("keyword");
+  joblist();
+});
+$(".searchicon").click(function () {
+  params.keyword = $("#keyword").val();
+  joblist();
+});

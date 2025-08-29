@@ -151,7 +151,6 @@
                   </div>
                 </div>
               </div>
-        
             </div>
             <img class="img1" src="./images/page1/img1.png" alt="" />
             <div class="lb2">
@@ -182,27 +181,34 @@
             <div class="t1"></div>
             <img class="title1" src="./images/page1/title2.png" alt="" />
             <video
+              id="video1"
               poster="./images/page1/fm.png"
               controls=""
               src="https://ideal.chinaceotv.com/2025/0827/0956/1757.mp4"
             ></video>
             <!-- <div class="video_tit">空中宣讲会</div> -->
             <img class="air1" src="./images/air3.png" alt="" />
-            
+
             <!-- <img class="air2" src="./images/air2.png" alt="" /> -->
           </div>
           <div class="box box2 hide">
             <img class="title1" src="./images/page2/title1.png" alt="" />
             <div class="searchBox">
               <select name="" id="lb">
-                            <option value="">职能类别</option>
-                        </select>
+                <option value="">职能类别</option>
+              </select>
               <select name="" id="xl">
                 <option value="">学历要求</option>
               </select>
               <div class="inputbox">
-                <input type="text" value="" placeholder="请输入搜索内容" value="" id="keyword"/>
-                <img class="searchicon" src="images/search.png">
+                <input
+                  type="text"
+                  value=""
+                  placeholder="请输入搜索内容"
+                  value=""
+                  id="keyword"
+                />
+                <img class="searchicon" src="images/search.png" />
               </div>
               <!-- <img
                 class="searchbtn"
@@ -221,7 +227,7 @@
                 <p>专业技术类</p>
               </div>
             </div>
-            
+
             <div class="listbox">
               <!-- <div class="list">
                             <div class="list-item">
@@ -261,16 +267,16 @@
             </div>
             <div class="gifs">
               <div>
-                <img src="images/page3/1.gif"/>
+                <img src="images/page3/1.gif" />
               </div>
               <div>
-                <img src="images/page3/2.gif"/>
+                <img src="images/page3/2.gif" />
               </div>
               <div>
-                <img src="images/page3/3.gif"/>
+                <img src="images/page3/3.gif" />
               </div>
               <div>
-                <img src="images/page3/4.gif"/>
+                <img src="images/page3/4.gif" />
               </div>
             </div>
             <div class="swiper2">
@@ -296,16 +302,13 @@
             </div>
             <img class="title3" src="./images/page3/title3.png" alt="" />
             <video
+              id="video2"
               controls
               src="https://ideal.chinaceotv.com/2025/0828/0923/0828.mp4"
               poster="./images/fm.jpg"
             ></video>
             <img class="air1" src="./images/air3.png" alt="" />
-            <img
-              class="air3"
-              src="./images/air1.png"
-              alt=""
-            />
+            <img class="air3" src="./images/air1.png" alt="" />
           </div>
           <div class="box box4 hide">
             <img class="title1" src="./images/page4/title1.png" alt="" />
@@ -328,7 +331,7 @@
             <img class="air1" src="./images/air3.png" alt="" />
           </div>
           <img class="l1" src="./images/l.png" alt="" />
-            <img class="l2" src="./images/r.png" alt="" />
+          <img class="l2" src="./images/r.png" alt="" />
         </div>
         <div class="footer">
           无忧工作网版权所有©<span
@@ -377,37 +380,35 @@
     <script src="./js/data.js"></script>
     <script>
       $(function () {
-  
-
-    //     var mySwiper = new Swiper(".swiper", {
-    //       loop: true, // 循环模式选项
-    //       observer: true, //开启动态检查器，监测swiper和slide
-    //       observeParents: true,
-    //       autoplay: {
-    //         time: 1500,
-    //       },
-    //       centeredSlides: true, // 强制中间 slide 居中（核心开关）
-    //       slidesPerView: 'auto', // 自动适配 slide 宽度（避免固定数量挤压中间图）
-    //       effect: "coverflow",
-    //       slidesPerView: 1,
-    //       coverflowEffect: {
-    //         rotate: 0,
-    // stretch: 50,
-    // depth: 150,
-    // modifier: 1,
-    // slideShadows: false,
-    //       },
-    //       navigation: {
-    //         nextEl: ".swiper-button-next1",
-    //         prevEl: ".swiper-button-prev1",
-    //       },
-    //       on: {
-    //         slideChangeTransitionStart: function () {
-    //           console.log(this.realIndex);
-    //           $(".box1 .t1").html(textarr[this.realIndex]);
-    //         },
-    //       },
-    //     });
+        //     var mySwiper = new Swiper(".swiper", {
+        //       loop: true, // 循环模式选项
+        //       observer: true, //开启动态检查器，监测swiper和slide
+        //       observeParents: true,
+        //       autoplay: {
+        //         time: 1500,
+        //       },
+        //       centeredSlides: true, // 强制中间 slide 居中（核心开关）
+        //       slidesPerView: 'auto', // 自动适配 slide 宽度（避免固定数量挤压中间图）
+        //       effect: "coverflow",
+        //       slidesPerView: 1,
+        //       coverflowEffect: {
+        //         rotate: 0,
+        // stretch: 50,
+        // depth: 150,
+        // modifier: 1,
+        // slideShadows: false,
+        //       },
+        //       navigation: {
+        //         nextEl: ".swiper-button-next1",
+        //         prevEl: ".swiper-button-prev1",
+        //       },
+        //       on: {
+        //         slideChangeTransitionStart: function () {
+        //           console.log(this.realIndex);
+        //           $(".box1 .t1").html(textarr[this.realIndex]);
+        //         },
+        //       },
+        //     });
 
         var mySwiper1 = new Swiper(".swiper1", {
           loop: true, // 循环模式选项
@@ -440,75 +441,72 @@
         });
       });
 
-      
       var mySwiper3 = new Swiper(".swiper3", {
-         
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".swiper4", {
+        // effect: 'coverflow',
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        autoplay: {
+          disableOnInteraction: false, // 鼠标滑动后继续自动播放
+        },
+        observer: true, //开启动态检查器，监测swiper和slide
+        observeParents: true, //监测Swiper 的祖/父元素
+        // coverflowEffect: {
+        //   rotate:0,
+        // stretch: 50,
+        // depth: 100,
+        // modifier: 1,
+        // slideShadows: false,
+        // },
+        // navigation: {
+        //     nextEl: '.swiper-button-next1',
+        //     prevEl: '.swiper-button-prev1',
+        // },
+      });
+      let textarr = [
+        "告警系统",
+        "配电系统",
+        "照明系统—机内外照明",
+        "照明系统—一体化座舱",
+        "智能语音系统",
+      ];
+      var swiper5 = new Swiper(".swiper5", {
+        effect: "coverflow",
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        autoplay: {
+          disableOnInteraction: false, // 鼠标滑动后继续自动播放
+        },
+        observer: true, //开启动态检查器，监测swiper和slide
+        observeParents: true, //监测Swiper 的祖/父元素
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 50,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next1",
+          prevEl: ".swiper-button-prev1",
+        },
+        on: {
+          slideChangeTransitionStart: function () {
+            console.log(this.realIndex);
+            $(".box1 .t1").html(textarr[this.realIndex]);
           },
-        });
-
-
-        var swiper = new Swiper(".swiper4", {
-            // effect: 'coverflow',
-            loop: true,
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 1,
-            autoplay: {
-                disableOnInteraction: false, // 鼠标滑动后继续自动播放
-            },
-            observer: true,  //开启动态检查器，监测swiper和slide
-            observeParents: true,  //监测Swiper 的祖/父元素
-            // coverflowEffect: {
-            //   rotate:0,
-            // stretch: 50,
-            // depth: 100,
-            // modifier: 1,
-            // slideShadows: false,
-            // },
-            // navigation: {
-            //     nextEl: '.swiper-button-next1',
-            //     prevEl: '.swiper-button-prev1',
-            // },
-          });
-          let textarr = [
-          "告警系统",
-          "配电系统",
-          "照明系统—机内外照明",
-          "照明系统—一体化座舱",
-          "智能语音系统",
-        ];
-          var swiper5 = new Swiper(".swiper5", {
-            effect: 'coverflow',
-            loop: true,
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-          autoplay: {
-                disableOnInteraction: false, // 鼠标滑动后继续自动播放
-            },
-            observer: true,  //开启动态检查器，监测swiper和slide
-            observeParents: true,  //监测Swiper 的祖/父元素
-            coverflowEffect: {
-              rotate:0,
-            stretch: 50,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next1',
-                prevEl: '.swiper-button-prev1',
-            },
-            on: {
-            slideChangeTransitionStart: function () {
-              console.log(this.realIndex);
-              $(".box1 .t1").html(textarr[this.realIndex]);
-            },
-          }
-          });
+        },
+      });
     </script>
   </body>
 </html>
