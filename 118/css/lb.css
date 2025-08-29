@@ -1,0 +1,78 @@
+
+/* lb */
+.lbbox{
+width: 800px;
+margin: 80px auto 0;
+overflow: hidden;
+}
+/* 外层容器 */
+.swiper {
+width: 800px;
+height: 300px;
+}
+
+/* 轮播项 */
+.swiper .swiper-slide {
+width: 60%;
+height: 100%;
+
+font-size: 32px;
+font-weight: 500;
+color: #ffffff;
+/* 文字垂直居中 */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.lb{
+width: 100%;
+position: relative;
+}
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.swiper-button-next{
+right: 0 !important;
+height: 100px;
+width: 100px;
+}
+.swiper-button-prev{
+left: 0 !important;
+height: 100px;
+width: 100px;
+
+}
+.pagination-box{
+display: flex;
+justify-content: center;
+}
+.swiper-pagination{
+width: 8%;
+display: flex;
+bottom: -40px;
+justify-content: space-around;
+}
+.swiper-pagination-bullet{
+background: none !important;
+border: 2px solid #007aff !important;
+}
+.swiper-pagination-bullet-active{
+background: #007aff !important;
+}
+.t1 {
+width: 25%;
+margin: 20px auto 0;
+font-family: FZLTDHK--GBK1-0;
+font-size: 20px;
+padding-bottom: 10px;
+border-bottom: solid 4px #0080cc;
+/* line-height: 0.66rem; */
+text-align: center;
+font-weight: 700;
+color: #0080cc;
+text-indent: 0;
+}

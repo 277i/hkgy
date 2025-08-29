@@ -1,7 +1,7 @@
 /*main*/
-.main{
+.main {
   position: relative;
-  background: url("../images/discipline/bacg.png") repeat-y ;
+  background: url("../images/about/bacg.png") repeat-y;
   background-size: 100% auto;
   min-height: 2613px;
   padding-bottom: 400px;
@@ -11,23 +11,22 @@
   /* height: 2416px; */
   padding: 20px 0 150px 0;
 }
-.inner img{
+.inner img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 /*title*/
-.title{
+.title {
   display: block;
   margin: 0 auto;
 }
-.title1{
+.title1 {
   margin-top: 41px;
 }
-.mian1{
+.mian1 {
   margin-top: 60px;
 }
-.mian2{
+.mian2 {
   margin-top: 57px;
 }
-

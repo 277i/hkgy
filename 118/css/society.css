@@ -1,7 +1,7 @@
 /*main*/
 .main {
   position: relative;
-  background: url("../images/society/bacg.png") no-repeat;
+  background: url("../images/about/bacg.png") repeat-y;
   background-size: 100% auto;
   min-height: 1280px;
   padding-top: 100px;
@@ -21,7 +21,7 @@
 }
 
 .sd {
-  width: 1024px;
+  /* max-width: 1024px; */
   margin: 0 auto;
   margin-top: 46px;
 }
@@ -58,7 +58,8 @@
   color: #000000;
   opacity: 0.5;
   background-size: 100% 100%;
-  background: url("../images/society/up.png") no-repeat 95% center,url("../images/society/bom1.png") no-repeat;
+  background: url("../images/society/up.png") no-repeat 95% center,
+    url("../images/society/bom1.png") no-repeat;
   background-size: 15px 15px, 100% 100%;
   /*  url("../images/society/bom1.png") no-repeat;    background: linear-gradient(to right, #fff,#fff),linear-gradient(0deg, 
 		#cbdcf2 0%, 
@@ -116,16 +117,15 @@
   display: flex;
   align-items: center;
   padding-left: 20px;
-   
 }
-.search input{
+.search input {
   outline: none;
   border: none;
   width: 80%;
   height: 90%;
   background: rgba(255, 255, 255, 0);
 }
-.search span{
+.search span {
   display: inline-block;
   width: 42px;
   height: 42px;
@@ -203,7 +203,7 @@
   display: none;
 }
 
-.post-com img{
+.post-com img {
   width: 150px;
 }
 

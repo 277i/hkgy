@@ -1,17 +1,17 @@
 /*main*/
 .main {
   position: relative;
-  background: url("../images/discipline/bacg.png") repeat-y ;
+  background: url("../images/about/bacg.png") repeat-y;
   background-size: 100% auto;
   min-height: 3780px;
   padding-top: 100px;
   padding-bottom: 400px;
 }
-.main .inner{
+.main .inner {
   /* height: 3627px; */
   padding: 20px 0 150px 0;
 }
-.inner img{
+.inner img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -20,52 +20,51 @@
 .title {
   display: block;
   margin: 0 auto;
-
 }
-.title1{
+.title1 {
   margin-top: 50px;
 }
-.title2{
+.title2 {
   margin-top: 94px;
 }
-.title3{
+.title3 {
   display: block;
   margin: 0 auto;
   margin-top: 27px;
 }
-.title4{
+.title4 {
   display: block;
   margin: 0 auto;
   margin-top: 68px;
 }
-.mian1{
+.mian1 {
   margin-top: 50px;
 }
-.mian2{
+.mian2 {
   margin-top: 51px;
 }
-.mian3{
+.mian3 {
   display: block;
   margin: 0 auto;
   margin-top: 57px;
 }
-.sd{
+.sd {
   margin-top: 68px;
 }
 
-.ed{
+.ed {
   margin: 0 auto;
   position: relative;
 }
-.in{
+.in {
   width: 814px;
   margin-top: -92px;
 }
-.in1{
-  width: 960px;
+.in1 {
+  width: 100%;
   margin-top: 30px;
 }
-.swiper{
+.swiper {
   width: 722px;
   padding-top: 52px;
   margin: 0 auto;
@@ -73,25 +72,24 @@
   position: relative;
   /* height: 366px; */
 }
-.swiper .swiper-slide-active{
+.swiper .swiper-slide-active {
   transform: translateY(-52px);
 }
-.swiper1{
-  width: 960px;
+.swiper1 {
+  width: 100%;
   overflow: hidden;
 }
 /* .swiper .swiper-slide{
   margin-left: 2px;
 } */
-.swiper-slide{
+.swiper-slide {
   /* width: 592px; */
 }
-.swiper-slide img{
+.swiper-slide img {
   /* width: 100%;
   height: 100%; */
- 
 }
-.swiper1 .swiper-slide{
+.swiper1 .swiper-slide {
   width: 240px;
   height: 144px;
   position: relative;
@@ -99,55 +97,67 @@
   transition: transform 0.3s;
   color: #ffffff;
 }
-.tst{
+.tst {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 24px;
-	letter-spacing: 0px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: 0px;
 }
 .swiper-slide.zoomed {
-   /* color: red; */
+  /* color: red; */
 }
-.swiper1 .swiper-slide img{
+.swiper1 .swiper-slide img {
   width: 100%;
   height: 100%;
 }
-.swiper-button-prev::after{
+.swiper-button-prev::after {
   display: none;
 }
-.swiper-button-next::after{
+.swiper-button-next::after {
   display: none;
 }
-.ee{
+.ee {
   /* height: 1165px; */
-  width: 1144px;
+  /* width: 1144px; */
   background-color: #fff;
   margin: 61px auto 20px auto;
 }
-.swiper-button-prev1{
+.gifBox {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  margin-top: 51px;
+}
+.gifBox img {
+  flex: 1;
+  min-width: 0;
+}
+.swiper-button-prev1 {
   position: absolute;
   left: 12px;
   z-index: 999;
   top: 49px;
 }
-.swiper-button-next1{
+.swiper-button-next1 {
   position: absolute;
   right: 12px;
   top: 49px;
   z-index: 999;
 }
-.play{
+.play {
   display: block;
-  width: 1022px;
+  width: 100%;
+  max-width: 1022px;
   margin: 0 auto;
   margin-top: 27px;
+  object-fit: contain;
 }
-.airplane2{
+.airplane2 {
   top: 33%;
   width: 150px;
 }

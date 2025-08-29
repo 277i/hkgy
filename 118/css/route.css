@@ -1,63 +1,61 @@
 /*main*/
-.main{
+.main {
   position: relative;
-  background: url("../images/about/bacg.png") no-repeat;
+  background: url("../images/about/bacg.png") repeat-y;
   background-size: 100% 100%;
   padding-top: 89px;
   min-height: 943px;
 }
 
 /*title*/
-.title{
+.title {
   display: block;
   margin: 0 auto;
-
 }
-.title-one-main{
+.title-one-main {
   width: 1031px;
   margin: 0 auto;
   margin-top: 75px;
-	font-family: NotoSansCJKsc-Medium;
-	font-size: 18px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 36px;
-	letter-spacing: 2.7px;
-	color: #000000;
+  font-family: NotoSansCJKsc-Medium;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 36px;
+  letter-spacing: 2.7px;
+  color: #000000;
 }
-.title-one-main li{
+.title-one-main li {
   text-indent: 2em;
 }
-.title-one-main h1{
+.title-one-main h1 {
   font-size: 22px;
-	color: #c21d41;
+  color: #c21d41;
   margin-bottom: 10px;
-
 }
-.title-mian1{
+.title-mian1 {
   width: 1010px;
   margin: 0 auto;
   padding-right: 21px;
   margin-top: 61px;
   text-align: justify;
-	font-family: NotoSansCJKsc-Medium;
-	font-size: 18px;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 36px;
-	letter-spacing: 2.7px;
-	color: #000000;
+  font-family: NotoSansCJKsc-Medium;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 36px;
+  letter-spacing: 2.7px;
+  color: #000000;
 }
-.title-mian1 img{
+.title-mian1 img {
   vertical-align: middle;
   margin-top: 10px;
   margin-right: 10px;
 }
-.title-mian1 li{
+.title-mian1 li {
   text-indent: 2em;
 }
-.title-mian1 h1{
+.title-mian1 h1 {
   font-size: 22px;
-	color: #c21d41;
+  color: #c21d41;
   margin-bottom: 10px;
 }
