@@ -154,19 +154,19 @@
               <div class="swiper swiper1">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="images/about/swiper/1.jpg"/>
+                    <img src="images/about/swiper/2.png" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/about/swiper/2.png"/>
+                    <img src="images/about/swiper/4.png" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/about/swiper/3.png"/>
+                    <img src="images/about/swiper/1.jpg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/about/swiper/4.png"/>
+                    <img src="images/about/swiper/5.jpg" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/about/swiper/5.jpg"/>
+                    <img src="images/about/swiper/3.png" />
                   </div>
                 </div>
               </div>
@@ -312,40 +312,40 @@
     });
 
     let textarr = [
-          "告警系统",
-          "配电系统",
-          "照明系统—机内外照明",
-          "照明系统—一体化座舱",
-          "智能语音系统",
-        ];
+      "告警系统",
+      "配电系统",
+      "照明系统—机内外照明",
+      "照明系统—一体化座舱",
+      "智能语音系统",
+    ];
     var swiper5 = new Swiper(".swiper1", {
-            effect: 'coverflow',
-            loop: true,
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: 'auto',
-          autoplay: {
-                disableOnInteraction: false, // 鼠标滑动后继续自动播放
-            },
-            observer: true,  //开启动态检查器，监测swiper和slide
-            observeParents: true,  //监测Swiper 的祖/父元素
-            coverflowEffect: {
-              rotate:0,
-            stretch: 50,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            on: {
-            slideChangeTransitionStart: function () {
-              console.log(this.realIndex);
-              $(".t1").html(textarr[this.realIndex]);
-            },
-          }
-          });
+      effect: "coverflow",
+      loop: true,
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      autoplay: {
+        disableOnInteraction: false, // 鼠标滑动后继续自动播放
+      },
+      observer: true, //开启动态检查器，监测swiper和slide
+      observeParents: true, //监测Swiper 的祖/父元素
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 50,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          console.log(this.realIndex);
+          $(".t1").html(textarr[this.realIndex]);
+        },
+      },
+    });
   </script>
 </html>
