@@ -75,8 +75,8 @@ var params = {
   providesalaryname: "",
   term: "", //0:全职1:兼职 4:实习（全职）5:实习（兼职）
   isurgency: "", //是否热招 0 否  1 是
-  sort: "", //职位排序字段coid、divid、jobarea、functype、poscode、joborder、issuedate、mark
-  sequence: 1, //1：正序;0：倒序;
+  sort: "poscode", //职位排序字段coid、divid、jobarea、functype、poscode、joborder、issuedate、mark
+  sequence: 0, //1：正序;0：倒序;
   // jobid:141394839,
   // jkeyword: ""
 };
