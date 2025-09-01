@@ -116,6 +116,18 @@ function joblist() {
       console.log(joblist !== undefined, "111");
 
       if (joblist !== undefined) {
+      const specifiedJobids = new Set(["167623436", "157639803", "157639797", "157639787", "167623701", "167689131", "167689206", "167623855", "157639782", "167624009", "157639767", "157699076", "157639765", "157639375", '157639371', "157639776", "157639805", "157639772", "167625400"]);
+      // 过滤出需要置顶的数据
+      const topData = joblist.filter(item => specifiedJobids.has(item.jobid));
+      // 按照 specifiedJobids 的顺序对 topData 进行排序
+      const sortedTopData = topData.sort((a, b) => {
+          return Array.from(specifiedJobids).indexOf(a.jobid) - Array.from(specifiedJobids).indexOf(b.jobid);
+      });
+      // 过滤出其他数据
+      const restData = joblist.filter(item => !specifiedJobids.has(item.jobid));
+      // 合并数据，置顶的在前
+      joblist= [...sortedTopData, ...restData];
+
         for (let i = 0; i < joblist.length; i++) {
           template2 += `
               <div class="list">
