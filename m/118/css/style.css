@@ -197,7 +197,7 @@ img {
 }
 .page .header .logo {
   width: 3.14rem;
-  margin: 0.2rem 0 0 .2rem;
+  margin: 0.2rem 0 0 0.2rem;
   /* margin-left: 0.6rem; */
 }
 .page .banner {
@@ -215,7 +215,7 @@ img {
   box-sizing: border-box;
   flex-wrap: wrap;
 }
-.page .navbox img{
+.page .navbox img {
   width: 100%;
   height: 100%;
 }
@@ -240,11 +240,11 @@ img {
   box-sizing: border-box;
   /* overflow: hidden; */
   position: relative;
-  padding-bottom: .6rem;
+  padding-bottom: 0.6rem;
 }
 .air1 {
   position: absolute;
-  top: -.5rem;
+  top: -0.5rem;
   right: -0.5rem;
   width: 2.3rem;
 }
@@ -257,7 +257,7 @@ img {
 .air3 {
   position: absolute;
   top: 48%;
-  left: -0.5rem;
+  left: -0.8rem;
   width: 1.3rem;
 }
 .page .box1 .title1 {
@@ -290,10 +290,10 @@ img {
   width: 100%;
   margin: 0.2rem auto;
 }
-.lb1{
+.lb1 {
   width: 100%;
   overflow: hidden;
-  position:relative;
+  position: relative;
 }
 
 .page .box1 .t1 {
@@ -361,15 +361,15 @@ img {
   box-sizing: border-box;
 }
 .page .box2 .searchBox select {
-  width:100%;
-  height: .6rem;
+  width: 100%;
+  height: 0.6rem;
   border: 1px solid #067af9;
   border-radius: 0.21rem;
   outline: none;
   font-size: 0.2rem;
   line-height: 0.27rem;
   color: #dedede;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 .page .box2 .searchBox .searchbtn {
   width: 1.55rem;
@@ -670,7 +670,7 @@ img {
   object-fit: cover;
 }
 
-.l1{
+.l1 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -678,7 +678,7 @@ img {
   width: 1.57rem;
   height: 1.33rem;
 }
-.l2{
+.l2 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -687,19 +687,19 @@ img {
   height: 1.33rem;
 }
 
-.inputbox{
+.inputbox {
   width: 100%;
-    margin: 0 auto 0.2rem;
-    height: 0.6rem;
-    border: solid 1px #067af9;
-    /* background-position: 70% 0.1rem; */
-    border-radius: 0.21rem;
-    display: flex;
-    font-size: 0.18rem;
-    align-items: center;
-    justify-content: space-between;
+  margin: 0 auto 0.2rem;
+  height: 0.6rem;
+  border: solid 1px #067af9;
+  /* background-position: 70% 0.1rem; */
+  border-radius: 0.21rem;
+  display: flex;
+  font-size: 0.18rem;
+  align-items: center;
+  justify-content: space-between;
 }
-.inputbox input{
+.inputbox input {
   border-radius: 0.21rem;
   width: 100%;
   height: 90%;
@@ -707,16 +707,15 @@ img {
   background-color: none;
   color: #c5cacc !important;
 }
-.inputbox img{
-  height: .3rem;
-
+.inputbox img {
+  height: 0.3rem;
 }
 input::-webkit-input-placeholder {
   /* placeholder颜色 */
   font-size: 0.2rem;
   line-height: 0.27rem;
   color: #dedede;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
   /* placeholder字体大小 */
   font-size: 0.18rem !important;
 }
@@ -728,29 +727,27 @@ input::-webkit-input-placeholder {
   justify-content: center;
   margin-top: 20px;
 }
-.gifs div{
+.gifs div {
   flex: 0 0 25%;
   width: 100%;
 }
-.gifs div img{
+.gifs div img {
   width: 100%;
 }
 
-.swiper-button-next1{
-  right: 0!important;
-    z-index: 999;
-
+.swiper-button-next1 {
+  right: 0 !important;
+  z-index: 999;
 }
-.swiper-button-prev1{
+.swiper-button-prev1 {
   left: 0 !important;
 
   z-index: 999;
 }
 
-
 /* lb1 */
 
-.lbbox{
+.lbbox {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -772,7 +769,7 @@ input::-webkit-input-placeholder {
   background-color: #fff;
 }
 
-.lb{
+.lb {
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -783,21 +780,19 @@ input::-webkit-input-placeholder {
   height: 100%;
   object-fit: cover;
 }
-.lbbox .swiper-button-next1{
-  right: 0!important;
-    z-index: 999;
-
+.lbbox .swiper-button-next1 {
+  right: 0 !important;
+  z-index: 999;
 }
-.lbbox .swiper-button-prev1{
+.lbbox .swiper-button-prev1 {
   left: 0 !important;
 
   z-index: 999;
 }
 
-
 /* 2 */
 
-.lbbox2{
+.lbbox2 {
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
@@ -820,7 +815,7 @@ input::-webkit-input-placeholder {
   border-radius: 10px;
 }
 
-.lb2{
+.lb2 {
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -832,12 +827,11 @@ input::-webkit-input-placeholder {
   object-fit: cover;
   border-radius: 10px;
 }
-.lbbox2 .swiper-button-next1{
-  right: 0!important;
-    z-index: 999;
-
+.lbbox2 .swiper-button-next1 {
+  right: 0 !important;
+  z-index: 999;
 }
-.lbbox2 .swiper-button-prev1{
+.lbbox2 .swiper-button-prev1 {
   left: 0 !important;
 
   z-index: 999;
