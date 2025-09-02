@@ -836,3 +836,19 @@ input::-webkit-input-placeholder {
 
   z-index: 999;
 }
+@media screen and (max-width: 768px) {
+  .entrance-cover__img {
+    width: 0.6rem !important;
+  }
+  .entrance-cover__title {
+    width: 1.3rem !important;
+  }
+  .entrance-cover__title img {
+    width: 100% !important;
+  }
+  .entrance-cover {
+    top: 62% !important;
+    right: 0 !important;
+    width: 1.5rem !important;
+  }
+}
