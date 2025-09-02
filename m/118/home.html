@@ -44,6 +44,13 @@
       var headElement = document.getElementsByTagName("head")[0];
       headElement.appendChild(show);
     </script>
+    <script type="text/javascript">
+      if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+        window.IENV.config({
+          rem: { bline: "bx", rval: 750 },
+        });
+      }
+    </script>
     <script src="https://ai.51job.com/sae/campus-agent-entrance.js"></script>
   </head>
   <style>
